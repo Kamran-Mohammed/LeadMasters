@@ -1,0 +1,141 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #0f172a;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo-link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.bar {
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.bar.open:nth-child(1) {
+  transform: rotate(45deg) translateY(7px);
+}
+
+.bar.open:nth-child(2) {
+  opacity: 0;
+}
+
+.bar.open:nth-child(3) {
+  transform: rotate(-45deg) translateY(-7px);
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 1.2rem;
+}
+
+.navbar-item {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #e2e8f0;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #38bdf8;
+}
+
+.navbar-user {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #a5f3fc;
+}
+
+.navbar-btn {
+  background: #38bdf8;
+  border: none;
+  color: #0f172a;
+  padding: 0.4rem 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.navbar-btn:hover {
+  background: #0ea5e9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #0f172a;
+    flex-direction: column;
+    width: 200px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    padding: 0;
+  }
+
+  .navbar-links.open {
+    max-height: 300px;
+    padding: 1rem 0;
+  }
+
+  .navbar-item {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-link,
+  .navbar-btn {
+    width: 100%;
+    text-align: left;
+  }
+}

@@ -1,0 +1,30 @@
+.dashboard {
+  text-align: center;
+  padding: 50px;
+}
+
+.dashboard h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.dashboard-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 12px 20px;
+  border: none;
+  background: #4cafef;
+  color: white;
+  font-size: 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #369fe0;
+}

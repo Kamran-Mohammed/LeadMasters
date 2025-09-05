@@ -1,0 +1,31 @@
+import { createContext, useContext, useEffect, useState } from "react";
+import api from "../utils/api";
+
+const AuthContext = createContext();
+
+export const AuthProvider = ({ children }) => {
+  const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const checkLoginStatus = async () => {
+      try {
+        const { data } = await api.get("/auth/isLoggedIn");
+        setUser(data.user);
+      } catch (error) {
+        console.error("Login check failed:", error);
+      }
+      setLoading(false);
+    };
+
+    checkLoginStatus();
+  }, []);
+
+  return (
+    <AuthContext.Provider value={{ user, setUser, loading }}>
+      {children}
+    </AuthContext.Provider>
+  );
+};
+
+export const useAuth = () => useContext(AuthContext);
