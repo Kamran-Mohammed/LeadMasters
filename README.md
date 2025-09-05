@@ -34,6 +34,10 @@ npm run start
 
 API will run on http://localhost:5003
 
+> Note: For ease of evaluation, a `.env` file is included with this repository.
+> This contains the MongoDB connection URI and JWT secret specifically for this project.
+> You can run the project immediately without setting up your own database.
+
 ### 3. Frontend Setup
 
 cd frontend
@@ -53,7 +57,3 @@ GET /api/questions – Fetch quiz questions
 ### 5. Testing API
 
 You can use Postman or curl to test the API endpoints.
-
-> Note: For ease of evaluation, a `.env` file is included with this repository.
-> This contains the MongoDB connection URI and JWT secret specifically for this project.
-> You can run the project immediately without setting up your own database.
