@@ -28,9 +28,9 @@ cd leadmasters
 
 ### 2. Backend Setup
 
-cd backend
-npm install
-npm run start
+- cd backend
+- npm install
+- npm run start
 
 API will run on http://localhost:5003
 
@@ -40,9 +40,9 @@ API will run on http://localhost:5003
 
 ### 3. Frontend Setup
 
-cd frontend
-npm install
-npm start
+- cd frontend
+- npm install
+- npm start
 
 Frontend will run on http://localhost:3000
 
