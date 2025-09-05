@@ -48,11 +48,11 @@ Frontend will run on http://localhost:3000
 
 ### 4. API Endpoints
 
-POST /api/auth/signup – Create a new user
-POST /api/auth/login – Login a user
-GET /api/auth/logout – Logout a user
-GET /api/auth/isLoggedIn – Check if user is logged in
-GET /api/questions – Fetch quiz questions
+- POST /api/auth/signup – Create a new user
+- POST /api/auth/login – Login a user
+- GET /api/auth/logout – Logout a user
+- GET /api/auth/isLoggedIn – Check if user is logged in
+- GET /api/questions – Fetch quiz questions
 
 ### 5. Testing API
 
