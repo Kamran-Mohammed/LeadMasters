@@ -57,3 +57,9 @@ GET /api/questions – Fetch quiz questions
 ### 5. Testing API
 
 You can use Postman or curl to test the API endpoints.
+
+### 6. Postman Collection
+
+- A Postman collection file is included in the `backend` folder (LeadMasters.postman_collection.json).
+- Open Postman → Click Import → Select the file → All endpoints will be available for testing.
+- This allows you to quickly test signup, login, logout, and quiz-related API calls without manually typing URLs or request bodies.
