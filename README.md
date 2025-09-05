@@ -23,8 +23,8 @@ LeadMasters is a platform for users to take coding quizzes online. Users can sig
 
 ### 1. Clone the repository
 
-git clone https://github.com/Kamran-Mohammed/LeadMasters.git
-cd leadmasters
+- git clone https://github.com/Kamran-Mohammed/LeadMasters.git
+- cd leadmasters
 
 ### 2. Backend Setup
 
